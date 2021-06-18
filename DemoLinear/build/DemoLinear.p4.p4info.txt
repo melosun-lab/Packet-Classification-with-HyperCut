@@ -1,0 +1,211 @@
+pkg_info {
+  arch: "v1model"
+}
+tables {
+  preamble {
+    id: 33574068
+    name: "MyIngress.ipv4_lpm"
+    alias: "ipv4_lpm"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: LPM
+  }
+  action_refs {
+    id: 16799317
+  }
+  action_refs {
+    id: 16805608
+  }
+  action_refs {
+    id: 16800567
+  }
+  size: 1024
+}
+tables {
+  preamble {
+    id: 33598624
+    name: "MyIngress.packetclassification"
+    alias: "packetclassification"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.srcAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 3
+    name: "meta.sport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 4
+    name: "meta.dport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 5
+    name: "hdr.ipv4.protocol"
+    bitwidth: 8
+    match_type: RANGE
+  }
+  action_refs {
+    id: 16786907
+  }
+  action_refs {
+    id: 16808025
+  }
+  action_refs {
+    id: 16833658
+  }
+  action_refs {
+    id: 16789758
+  }
+  action_refs {
+    id: 16788278
+  }
+  action_refs {
+    id: 16813963
+  }
+  action_refs {
+    id: 16835177
+  }
+  action_refs {
+    id: 16795380
+  }
+  action_refs {
+    id: 16777223
+  }
+  action_refs {
+    id: 16835954
+  }
+  action_refs {
+    id: 16833154
+  }
+  action_refs {
+    id: 16805608
+  }
+  size: 1024
+  is_const_table: true
+}
+actions {
+  preamble {
+    id: 16800567
+    name: "NoAction"
+    alias: "NoAction"
+  }
+}
+actions {
+  preamble {
+    id: 16805608
+    name: "MyIngress.drop"
+    alias: "drop"
+  }
+}
+actions {
+  preamble {
+    id: 16799317
+    name: "MyIngress.ipv4_forward"
+    alias: "ipv4_forward"
+  }
+  params {
+    id: 1
+    name: "dstAddr"
+    bitwidth: 48
+  }
+  params {
+    id: 2
+    name: "port"
+    bitwidth: 9
+  }
+}
+actions {
+  preamble {
+    id: 16786907
+    name: "MyIngress.a0"
+    alias: "a0"
+  }
+}
+actions {
+  preamble {
+    id: 16808025
+    name: "MyIngress.a1"
+    alias: "a1"
+  }
+}
+actions {
+  preamble {
+    id: 16833658
+    name: "MyIngress.a2"
+    alias: "a2"
+  }
+}
+actions {
+  preamble {
+    id: 16789758
+    name: "MyIngress.a3"
+    alias: "a3"
+  }
+}
+actions {
+  preamble {
+    id: 16788278
+    name: "MyIngress.a4"
+    alias: "a4"
+  }
+}
+actions {
+  preamble {
+    id: 16813963
+    name: "MyIngress.a5"
+    alias: "a5"
+  }
+}
+actions {
+  preamble {
+    id: 16835177
+    name: "MyIngress.a6"
+    alias: "a6"
+  }
+}
+actions {
+  preamble {
+    id: 16795380
+    name: "MyIngress.a7"
+    alias: "a7"
+  }
+}
+actions {
+  preamble {
+    id: 16777223
+    name: "MyIngress.a8"
+    alias: "a8"
+  }
+}
+actions {
+  preamble {
+    id: 16835954
+    name: "MyIngress.a9"
+    alias: "a9"
+  }
+}
+actions {
+  preamble {
+    id: 16833154
+    name: "MyIngress.a11"
+    alias: "a11"
+  }
+}
+type_info {
+}

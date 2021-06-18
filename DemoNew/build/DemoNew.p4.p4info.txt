@@ -1,0 +1,701 @@
+pkg_info {
+  arch: "v1model"
+}
+tables {
+  preamble {
+    id: 33574068
+    name: "MyIngress.ipv4_lpm"
+    alias: "ipv4_lpm"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: LPM
+  }
+  action_refs {
+    id: 16799317
+  }
+  action_refs {
+    id: 16805608
+  }
+  action_refs {
+    id: 16800567
+  }
+  size: 1024
+}
+tables {
+  preamble {
+    id: 33605485
+    name: "MyIngress.root"
+    alias: "root"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.srcAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 3
+    name: "meta.sport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 4
+    name: "meta.dport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 5
+    name: "hdr.ipv4.protocol"
+    bitwidth: 8
+    match_type: RANGE
+  }
+  action_refs {
+    id: 16783389
+  }
+  action_refs {
+    id: 16824564
+  }
+  action_refs {
+    id: 16835882
+  }
+  size: 1024
+  is_const_table: true
+}
+tables {
+  preamble {
+    id: 33582349
+    name: "MyIngress.node1"
+    alias: "node1"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.srcAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 3
+    name: "meta.sport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 4
+    name: "meta.dport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 5
+    name: "hdr.ipv4.protocol"
+    bitwidth: 8
+    match_type: RANGE
+  }
+  action_refs {
+    id: 16783389
+  }
+  action_refs {
+    id: 16824564
+  }
+  action_refs {
+    id: 16835882
+  }
+  size: 1024
+  is_const_table: true
+}
+tables {
+  preamble {
+    id: 33602274
+    name: "MyIngress.leaf1"
+    alias: "leaf1"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.srcAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 3
+    name: "meta.sport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 4
+    name: "meta.dport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 5
+    name: "hdr.ipv4.protocol"
+    bitwidth: 8
+    match_type: RANGE
+  }
+  action_refs {
+    id: 16835954
+  }
+  action_refs {
+    id: 16805608
+  }
+  size: 1024
+  is_const_table: true
+}
+tables {
+  preamble {
+    id: 33609991
+    name: "MyIngress.leaf2"
+    alias: "leaf2"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.srcAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 3
+    name: "meta.sport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 4
+    name: "meta.dport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 5
+    name: "hdr.ipv4.protocol"
+    bitwidth: 8
+    match_type: RANGE
+  }
+  action_refs {
+    id: 16833154
+  }
+  action_refs {
+    id: 16805608
+  }
+  size: 1024
+  is_const_table: true
+}
+tables {
+  preamble {
+    id: 33588667
+    name: "MyIngress.leaf3"
+    alias: "leaf3"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.srcAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 3
+    name: "meta.sport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 4
+    name: "meta.dport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 5
+    name: "hdr.ipv4.protocol"
+    bitwidth: 8
+    match_type: RANGE
+  }
+  action_refs {
+    id: 16777223
+  }
+  action_refs {
+    id: 16833154
+  }
+  action_refs {
+    id: 16805608
+  }
+  size: 1024
+  is_const_table: true
+}
+tables {
+  preamble {
+    id: 33555218
+    name: "MyIngress.leaf4"
+    alias: "leaf4"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.srcAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 3
+    name: "meta.sport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 4
+    name: "meta.dport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 5
+    name: "hdr.ipv4.protocol"
+    bitwidth: 8
+    match_type: RANGE
+  }
+  action_refs {
+    id: 16789758
+  }
+  action_refs {
+    id: 16795380
+  }
+  action_refs {
+    id: 16833154
+  }
+  action_refs {
+    id: 16805608
+  }
+  size: 1024
+  is_const_table: true
+}
+tables {
+  preamble {
+    id: 33565932
+    name: "MyIngress.leaf5"
+    alias: "leaf5"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.srcAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 3
+    name: "meta.sport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 4
+    name: "meta.dport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 5
+    name: "hdr.ipv4.protocol"
+    bitwidth: 8
+    match_type: RANGE
+  }
+  action_refs {
+    id: 16833658
+  }
+  action_refs {
+    id: 16795380
+  }
+  action_refs {
+    id: 16833154
+  }
+  action_refs {
+    id: 16805608
+  }
+  size: 1024
+  is_const_table: true
+}
+tables {
+  preamble {
+    id: 33573433
+    name: "MyIngress.leaf6"
+    alias: "leaf6"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.srcAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 3
+    name: "meta.sport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 4
+    name: "meta.dport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 5
+    name: "hdr.ipv4.protocol"
+    bitwidth: 8
+    match_type: RANGE
+  }
+  action_refs {
+    id: 16788278
+  }
+  action_refs {
+    id: 16795380
+  }
+  action_refs {
+    id: 16833154
+  }
+  action_refs {
+    id: 16805608
+  }
+  size: 1024
+  is_const_table: true
+}
+tables {
+  preamble {
+    id: 33585121
+    name: "MyIngress.leaf7"
+    alias: "leaf7"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.srcAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 3
+    name: "meta.sport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 4
+    name: "meta.dport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 5
+    name: "hdr.ipv4.protocol"
+    bitwidth: 8
+    match_type: RANGE
+  }
+  action_refs {
+    id: 16786907
+  }
+  action_refs {
+    id: 16813963
+  }
+  action_refs {
+    id: 16805608
+  }
+  size: 1024
+  is_const_table: true
+}
+tables {
+  preamble {
+    id: 33600832
+    name: "MyIngress.leaf8"
+    alias: "leaf8"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.srcAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 3
+    name: "meta.sport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 4
+    name: "meta.dport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 5
+    name: "hdr.ipv4.protocol"
+    bitwidth: 8
+    match_type: RANGE
+  }
+  action_refs {
+    id: 16795380
+  }
+  action_refs {
+    id: 16833154
+  }
+  action_refs {
+    id: 16805608
+  }
+  size: 1024
+  is_const_table: true
+}
+tables {
+  preamble {
+    id: 33578694
+    name: "MyIngress.leaf9"
+    alias: "leaf9"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.srcAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 2
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: RANGE
+  }
+  match_fields {
+    id: 3
+    name: "meta.sport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 4
+    name: "meta.dport"
+    bitwidth: 16
+    match_type: RANGE
+  }
+  match_fields {
+    id: 5
+    name: "hdr.ipv4.protocol"
+    bitwidth: 8
+    match_type: RANGE
+  }
+  action_refs {
+    id: 16786907
+  }
+  action_refs {
+    id: 16808025
+  }
+  action_refs {
+    id: 16835177
+  }
+  action_refs {
+    id: 16805608
+  }
+  size: 1024
+  is_const_table: true
+}
+actions {
+  preamble {
+    id: 16800567
+    name: "NoAction"
+    alias: "NoAction"
+  }
+}
+actions {
+  preamble {
+    id: 16805608
+    name: "MyIngress.drop"
+    alias: "drop"
+  }
+}
+actions {
+  preamble {
+    id: 16835882
+    name: "MyIngress.null_end"
+    alias: "null_end"
+  }
+}
+actions {
+  preamble {
+    id: 16799317
+    name: "MyIngress.ipv4_forward"
+    alias: "ipv4_forward"
+  }
+  params {
+    id: 1
+    name: "dstAddr"
+    bitwidth: 48
+  }
+  params {
+    id: 2
+    name: "port"
+    bitwidth: 9
+  }
+}
+actions {
+  preamble {
+    id: 16824564
+    name: "MyIngress.set_index"
+    alias: "set_index"
+  }
+  params {
+    id: 1
+    name: "lvl"
+    bitwidth: 16
+  }
+}
+actions {
+  preamble {
+    id: 16783389
+    name: "MyIngress.set_leaf"
+    alias: "set_leaf"
+  }
+  params {
+    id: 1
+    name: "lvl"
+    bitwidth: 16
+  }
+}
+actions {
+  preamble {
+    id: 16786907
+    name: "MyIngress.a0"
+    alias: "a0"
+  }
+}
+actions {
+  preamble {
+    id: 16808025
+    name: "MyIngress.a1"
+    alias: "a1"
+  }
+}
+actions {
+  preamble {
+    id: 16833658
+    name: "MyIngress.a2"
+    alias: "a2"
+  }
+}
+actions {
+  preamble {
+    id: 16789758
+    name: "MyIngress.a3"
+    alias: "a3"
+  }
+}
+actions {
+  preamble {
+    id: 16788278
+    name: "MyIngress.a4"
+    alias: "a4"
+  }
+}
+actions {
+  preamble {
+    id: 16813963
+    name: "MyIngress.a5"
+    alias: "a5"
+  }
+}
+actions {
+  preamble {
+    id: 16835177
+    name: "MyIngress.a6"
+    alias: "a6"
+  }
+}
+actions {
+  preamble {
+    id: 16795380
+    name: "MyIngress.a7"
+    alias: "a7"
+  }
+}
+actions {
+  preamble {
+    id: 16777223
+    name: "MyIngress.a8"
+    alias: "a8"
+  }
+}
+actions {
+  preamble {
+    id: 16835954
+    name: "MyIngress.a9"
+    alias: "a9"
+  }
+}
+actions {
+  preamble {
+    id: 16833154
+    name: "MyIngress.a11"
+    alias: "a11"
+  }
+}
+type_info {
+}
